@@ -2,9 +2,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.75rem;
 }
-* {
-  box-sizing: border-box;
-}
+
 body {
   display: flex;
   flex-direction: column;
