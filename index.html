@@ -1,40 +1,140 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume landing page</title>
-    <link rel="stylesheet" href="./src/index.css" />
-  </head>
-  <body>
-    <div class="img"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional resume</title>
+        <link  rel = "stylesheet" href="./resume.css"/>
+        <script src="https://use.fontawesome.com/683896e4c9.js"></script>    </head>
+    <body>
+        <a href="resumelanding.html" id="back"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Go back</a>
 
-    <div class="main-text">
-      <nav>
-        <ul>
-          <li>Author</li>
-          <li>About me</li>
-          <li>GitHub</li>
-          <li>Linkedin</li>
-        </ul>
-      </nav>
-      <main>
-        <div class="text">
-          <pre>
-            Resume-
-            Not just text on a paper.
+        <button id="upload"><i class="fa fa-download" aria-hidden="true"></i>  Download resume</button>
+
+    <div class="main-container">
+
+        <header class="primary-header">
+            <div class="header-container">
+            <img src="./image.jpg" id="image"/>
+            <h1>MIYAPURAM UDAY CHARAN</h1>
+            </div>
             
-        </pre
-          >
-          <button onclick="resume()" class="btn-style">Resume</button>
-        </div>
-      </main>
+            <div class="address-container">
+                <ul>
+                    <li>Mobile: 9889XXXXX76</li>
+                    <li>Email:  udayXXXXX@gmail.com</li>
+                    <li>Address:XYZ Street</li>
+                    <li>DOB: 06/02/1997</li>
+                </ul>
+            </div>
+            
+        </header>
+
+
+        <main class="main-content">
+            <div class="btn-align">
+            <button id="btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i>  Edit</button>
+            </div>
+
+            <fieldset class="education" >
+                <legend>Educational Qualification</legend>
+                <ul class="box-1">
+                <li>Course: Engineering</li>
+                <li>College: CMR TECHNICAL CAMPUS</li>
+                <li>Passout year: 2019</li>
+                <li>Stream: Computer Science</li>
+                <li>Percentage: <span><progress class="progress-anim" id="marks" max="100" value="60" aria-valuemin="0" aria-valuemax="60"  title="60%"></progress></span></li>
+                </ul>
+
+                <ul class="box-1">
+                    <li>Course: Intermediate</li>
+                    <li>Colege: Alphores Junior College</li>
+                    <li>Passout year: 2015</li>
+                    <li>Stream: MPC</li>
+                    <li>Percentage: <span><progress class="progress-anim" id="marks" max="100" value="86" title="86%"></progress></span></li>
+                </ul>
+                <ul class="box-1">
+                    <li>Course: SSC</li>
+                    <li>School: Alphores High School</li>
+                    <li>Passout year: 2013</li>
+                    <li>Percentage: <span><progress class="progress-anim" id="marks" max="100" value="93" title="97%"></progress></span></li>
+
+                </ul>
+            </fieldset>
+
+            
+
+            <fieldset class="skills" >
+                <legend>Technical Skills</legend>
+                <ul class="box-2">
+                <li>HTML5 <span><progress class="progress-anim" id="knowledge" max="100" value="90" title="90%"></progress></span></li>
+                <li>CSS  <span><progress class="progress-anim" id="knowledge" max="100" value="90" title="90%"></progress></span></li>
+                <li>JAVASCRIPT  <span><progress class="progress-anim" id="knowledge" max="100" value="70" title="70%"></progress></span></li>
+                <li>Wordpress(content management system) <span><progress class="progress-anim" id="knowledge" max="100" value="70" title="70%"></progress></span></li>
+                <li>Git  <span><progress class="progress-anim" id="knowledge" max="100" value="65" title="65%"></progress></progress></span></li>
+                <li>DBMS <span><progress class="progress-anim" id="knowledge" max="100" value="65" title="65%"></progress></progress></span></li>
+                </ul>
+
+            </fieldset>
+
+           
+            <fieldset class="projects">
+                <legend>My Projects</legend>
+                <ol>
+                <li>
+                Around me application : This is a application which shows us the nearest
+                petrol stations, hospitals, ATMs, Restaurants.
+                </li>
+                </ol>
+            </fieldset>
+
+       
+            <fieldset class="experience" >
+                <legend>Experience </legend>
+                <ul id="awards">
+                    <li>Compant: Amazon development center pvt.ltd.</li>
+                    <li>Work period: June 2019 - Jan 2020.</li>
+                    <li>Role: Customer service associate.</li>
+                    <li>Awards: Mr.Independent(received max positive responses from clients in short time.</li>
+                    <li>Mr. OT(for working extra hours)</li>
+                </ul>
+            </fieldset>
+
+            
+            <fieldset class="social-media">
+                <legend>Social Profiles</legend>
+                <a href="https://www.linkedin.com/home" noopener norefferer id="linkedin" target="_blank"><span><i class="fa fa-linkedin-square icon fa-lg" aria-hidden="true" style="color: #0049FF;"></i></span>Linkedin</a>
+                <a href="https://www.facebook.com/" noopener norefferer id="facebook" target="_blank"><span><i class="fa fa-facebook-square icon fa-lg" aria-hidden="true" style="color: #0000FF;"></i></span>Facebook</a>
+                <a href="https://github.com/login"  noopener norefferer id="github" target="_blank"><span><i class="fa fa-github-square icon fa-lg" aria-hidden="true" style="color: #45AF2A;"></i></span>GitHub</a>
+            </fieldset>
+        </main>
     </div>
 
+    <footer>
+        &copy;copyrights 2021 reserverd by <em>Uday charan</em>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut amet quae consequatur ipsam debitis nisi maxime illo quasi assumenda modi accusamus tempore molestias ratione earum voluptate
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut amet quae consequatur ipsam debitis nisi maxime illo quasi. 
+            </p>
+   </footer>
+
     <script>
-      function resume() {
-        location.assign("resume.html");
-      }
+        // const progressBar = document.querySelector('.main-container');
+
+        //     progressBar.addEventListener('click', ()=>{
+
+        //         if(event.target.getAttribute("class") === "progress-anim" ){
+
+        //         setInterval(()=>{
+
+        //             let val = 0;
+        //     event.target.value = val + 6;
+        //       }, 500);
+
+        //     }
+
+        //     });
+        
     </script>
-  </body>
-</html>
+    
+    </body>
+    </html>
