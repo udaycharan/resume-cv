@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   color: black;
   font-weight: 400;
@@ -62,7 +62,6 @@ nav ul li:hover {
 .text {
   padding: 1rem;
   position: absolute;
-  font-size: 2.6rem;
   color: #000;
   top: -65%;
   left: 15%;
@@ -70,20 +69,24 @@ nav ul li:hover {
   filter: contrast(70%);
   flex-direction: row;
 }
+
+.text pre {
+  font-size: 5rem;
+}
 .btn-style {
   margin-left: 10rem;
   position: absolute;
   top: 30%;
   left: 90%;
-  width: 7rem;
-  height: 3rem;
-  font-size: 1rem;
+  width: 9.5rem;
+  height: 5rem;
+  font-size: 1.5rem;
   padding: 1rem;
   letter-spacing: 1px;
   font-weight: 600;
   background-color: #0c55e7;
   color: #ffffff;
-  border-radius: 1.7rem;
+  border-radius: 2rem;
   box-shadow: 3px 5px 4px rgba(167, 152, 152, 0.5);
   border: none;
 }
